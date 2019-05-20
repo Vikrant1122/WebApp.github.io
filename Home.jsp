@@ -1,0 +1,98 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>The Burger Shop</title>
+        <style>
+            
+            #mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+#About {
+    top: 200px;
+    background-color: blue;
+}
+
+#Reg {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#Log {
+    top: 80px;
+    background-color: #2196F3;
+}
+
+#Menu {
+    top: 140px;
+    background-color: #f44336;
+}
+
+
+</style>
+    </head>
+    <body  background="f.jpg">
+        <div id="mySidenav" class="sidenav" align="left">
+  <a href="Reg.jsp" id="Reg">Registration</a>
+  <a href="Login.jsp" id="Log">Login</a>
+  <a href="Menu.jsp" id="Menu">Menu</a>
+  <a href="About.jsp" id="About">About us</a>
+</div>
+
+        <form>
+            <font color="white" face="impact" size="6"><h1 align="center" style="  background-color: blue" >The Burger Shop</h1></font>
+                  
+            
+        <table border="2" color="red" align="center" bgcolor="white">
+           <br><br><br><br>
+            <tr><th colspan="4">My Product</th></tr>
+            <tr>
+                <td><a href="image1.jsp">
+        <img src="01.jpg" hight="200" width="300"></a></td>
+                <td><a href="image2.jsp">
+                        <img src="02.png" hight="200" width="300"></a></td>
+                <td><a href="image3.jsp">
+                        <img src="03.jpg" hight="200" width="300"></a></td>
+                <td><a href="image4.jsp">
+                        <img src="04.jpg" hight="200" width="300"></a></td>
+            </tr>
+            <tr><td align="center">Whopper<a href="Buy.jsp"><input type="button" value="Buy Now" style="background-color: greenyellow"></a></td>
+                <td align="center">Egg <a href="Buy.jsp"><input type="button" value="Buy Now" style="background-color: greenyellow"></a></td>
+                <td align="center">Limited Time Whopper<a href="Buy.jsp"> <input type="button" value="Buy Now" style="background-color: greenyellow"></a></td>
+                <td align="center">Vegetarian <a href="Buy.jsp"><input type="button" value="Buy Now" style="background-color: greenyellow"></a></td></tr>
+        </table>
+            
+            <table align="center" border="2" color="baba">
+      <br><br><br><br>
+                <tr bgcolor="skyblue">
+                    <th><a href="Reg.jsp">Registration</a></th>
+                    <th><a href="Login.jsp">Login</a></th>
+                </tr>
+            </table>
+            <marquee behavior="alternate" direction="right" bgcolor="red"><font size="20"><p>King Of The Burger</p></font></marquee>
+            
+            <footer>
+            <table height="200" width="1500">
+                <tr bgcolor="pink">
+                <th>INFO</th><th>CAREERS</th><th>CARES</th></tr>
+                <tr bgcolor="skyblue"><td><a href="#">About</a></td><td><a href="#">Bright it</a></td><td><a href="#">Nutrition info</a></td></tr>
+                <tr bgcolor="skyblue"><td><a href="#">Food Quality</a></td><td><a href="#">Opportunities</a></td><td><a href="#">Privacy</a></td></tr>
+             <tr bgcolor="skyblue"><td><a href="#">Prepared to Order</a></td><td><a href="#">Delivery</a></td><td><a href="#">Responsibility</a></td></tr>
+            </table>
+            </footer>
+        </form>   
+    </body>
+</html>

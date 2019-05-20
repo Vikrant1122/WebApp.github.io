@@ -1,0 +1,38 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page language="java" import="java.sql.*"%>
+<%
+String BurgerName = request.getParameter("bname");
+String Amount = request.getParameter("amt");
+String Address = request.getParameter("add");
+String MobileNo = request.getParameter("mno");
+try{
+    
+Class.forName("com.mysql.jdbc.Driver");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Dyna","root","root");
+PreparedStatement ps = con.prepareStatement("insert into tb3 values(?,?,?,?)");
+
+ps.setString(1,BurgerName);
+ps.setString(2,Amount);
+ps.setString(3,Address);
+ps.setString(4,MobileNo);
+ps.executeUpdate();
+out.println("Payment is SuccessFully");
+}catch(Exception e){
+out.println(e);
+}
+%>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Payment Successfully</title>
+    </head>
+    <body>
+        <form action="Home.jsp">
+       
+            <h1>If you show Payment is successfully so,Click OK</h1><br/>
+            <input type="submit" value="ok">
+        </form>
+    </body>
+</html>

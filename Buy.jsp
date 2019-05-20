@@ -1,0 +1,28 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>payment Mode</title>
+    </head>
+    <body background="05.jpg">
+        <form action="Buy1.jsp">
+            
+<table align="center" border="2" height="500" width="1000" background="01.jpg">
+    <tr><th colspan="2">
+            <font face="impact" color="red" size="10"><h2 align="center">Payment</h2></font>
+        </th></tr>
+        <tr><th>
+                Burger Name :</th><td> <input type="text" placeholder="burger name" name="bname" style="background-color: greenyellow"></td>
+            </tr><th>
+        Amount      :</th><td> <input type="text" placeholder="amount" name="amt" style="background-color: greenyellow"></td></tr>
+<tr><th>
+        Address     :</th><td> <input type="text" placeholder="address" name="add" style="background-color: greenyellow"></td></tr>
+<tr><th>
+        Mobile No.  :</th><td> <input type="text" placeholder="phone number" name="mno" style="background-color: greenyellow"></td></tr>
+<tr><td colspan="2"  align="center"><a href="Home.jsp"><input type="button" value="BACK"></a>
+        <input type="submit" value="Submit"></td></tr>
+</table>
+        </form>
+    </body>
+</html>
